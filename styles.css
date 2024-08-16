@@ -4,9 +4,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #0d0d0d;
-    background-image: url('modern_arcade_background.png');
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
     color: #f2f2f2;
     padding-top: 70px; /* Space for the fixed navbar */
 }
@@ -17,8 +15,8 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 2px 10px rgba(0, 255, 255, 0.6);
+    background: rgba(20, 20, 20, 0.95);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -26,10 +24,11 @@ nav ul {
     margin: 0;
     padding: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 20px;
 }
 
@@ -37,12 +36,12 @@ nav ul li a {
     text-decoration: none;
     color: #00ffff;
     font-size: 18px;
-    transition: color 0.3s ease;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
 }
 
 /* Header Styling */
@@ -67,13 +66,13 @@ h1 {
 }
 
 .content-container {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 3px solid #00ffff;
+    background: linear-gradient(to bottom right, #1c1c1c, #292929);
+    border: 1px solid #333;
     border-radius: 15px;
     padding: 30px;
     margin: 20px auto;
     width: 80%;
-    box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.8);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Game Menu */
@@ -83,21 +82,22 @@ h1 {
 
 .arcade-button {
     background-color: #00ffff;
-    border: 2px solid #ff00ff;
-    border-radius: 10px;
+    background: linear-gradient(145deg, #00e0e0, #00ffff);
+    border: none;
+    border-radius: 8px;
     color: #0d0d0d;
     font-size: 16px;
     padding: 15px 40px;
     margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .arcade-button:hover {
     background-color: #ff00ff;
+    background: linear-gradient(145deg, #ff00ff, #ff33ff);
     color: #f2f2f2;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Streamer Showcasing */
@@ -113,37 +113,38 @@ h1 {
 }
 
 .streamer {
-    background-color: rgba(0, 0, 0, 0.85);
+    background: linear-gradient(to bottom right, #1c1c1c, #292929);
     padding: 10px;
-    border: 2px solid #00ffff;
-    border-radius: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
     text-align: center;
     width: 200px;
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .streamer img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .neon-button {
     background-color: #00ffff;
-    border: 2px solid #ff00ff;
-    border-radius: 10px;
+    background: linear-gradient(145deg, #00e0e0, #00ffff);
+    border: none;
+    border-radius: 8px;
     color: #0d0d0d;
     font-size: 14px;
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .neon-button:hover {
     background-color: #ff00ff;
+    background: linear-gradient(145deg, #ff00ff, #ff33ff);
     color: #f2f2f2;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Events, Tournaments, Forums, and Shop Sections */
@@ -155,18 +156,18 @@ h1 {
 }
 
 .event-item, .tournament-item, .forum-item, .shop-item {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 2px solid #00ffff;
-    border-radius: 10px;
+    background: linear-gradient(to bottom right, #1c1c1c, #292929);
+    border: 1px solid #333;
+    border-radius: 8px;
     padding: 20px;
     width: 300px;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .shop-item img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
@@ -177,5 +178,5 @@ button {
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
