@@ -40,6 +40,7 @@ nav ul li a {
     font-size: 18px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
     position: relative;
+    aria-label: "Navigation Link";
 }
 
 nav ul li a::before {
@@ -88,10 +89,13 @@ h1 {
     display: none;
     padding: 30px;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .visible {
     display: block;
+    opacity: 1;
 }
 
 .content-container {
@@ -173,6 +177,7 @@ h1 {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+    loading: lazy; /* Optimized for performance */
 }
 
 /* Neon Button Styling */
@@ -227,6 +232,7 @@ h1 {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+    loading: lazy; /* Optimized for performance */
 }
 
 /* General Button Styling */
@@ -238,4 +244,30 @@ button {
 button:hover {
     transform: scale(1.1);
     box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content-container {
+        width: 90%;
+    }
+
+    .game-menu, .streamer-grid, .events-list, .tournament-list, .forum-list, .shop-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .arcade-button, .neon-button, .event-item, .tournament-item, .forum-item, .shop-item {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
 }
