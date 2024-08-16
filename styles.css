@@ -8,24 +8,15 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    padding-top: 60px; /* Space for the fixed navbar */
 }
 
 /* Navigation Bar */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(255, 0, 0, 0.8);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
     text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
 }
 
 nav ul li {
