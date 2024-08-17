@@ -2,7 +2,7 @@
 body {
     color: #333333;
     font-family: 'Poppins', sans-serif;
-    padding-left: 200px; /* Space for the fixed navbar */
+    padding-left: 150px; /* Smaller space for the fixed navbar */
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    width: 200px;
+    width: 150px;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.9);
     box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.5);
