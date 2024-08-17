@@ -2,7 +2,7 @@
 body {
     color: #333333;
     font-family: 'Poppins', sans-serif;
-    padding-left: 150px; /* Smaller space for the fixed navbar */
+    padding-left: 150px; /* Space for the fixed navbar */
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -53,6 +53,12 @@ nav ul li a {
 nav ul li a:hover {
     color: #ff4d4d;
     text-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff6666;
+}
+
+/* Main Content Area */
+main {
+    margin-left: 160px; /* Ensure content is not covered by the navbar */
+    padding: 20px;
 }
 
 /* Header Styling */
@@ -209,6 +215,10 @@ footer a:hover {
 
     body {
         padding-left: 0;
+    }
+
+    main {
+        margin-left: 0;
     }
 
     .content-container {
