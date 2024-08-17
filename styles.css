@@ -1,10 +1,19 @@
 /* General Body Styling */
 body {
-    background-color: #ffffff;
     color: #333333;
     font-family: 'Poppins', sans-serif;
     padding-left: 200px; /* Space for the fixed navbar */
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body.homepage {
+    background-image: url('pixellove.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* Navigation Bar */
@@ -71,14 +80,8 @@ h1 {
     opacity: 1;
 }
 
-#home {
-    background-image: url('pixellove.png');
-    background-size: cover;
-    background-position: center;
-}
-
 .content-container {
-    background: #f9f9f9;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     padding: 40px;
     margin: 40px auto;
