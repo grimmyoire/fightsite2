@@ -1,18 +1,11 @@
 /* General Body Styling */
 body {
-    color: #2c3e50;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f8f9fa;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-}
-
-body.homepage {
-    background-image: url('pixellove.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    line-height: 1.6;
 }
 
 /* Navigation Bar */
@@ -21,11 +14,11 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    width: 140px;
+    width: 150px;
     z-index: 1000;
     background: #2c3e50;
-    padding-top: 20px;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
 }
 
 nav ul {
@@ -35,7 +28,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -43,36 +36,40 @@ nav ul li a {
     text-decoration: none;
     color: #ecf0f1;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: block;
-    padding: 10px;
-    transition: color 0.3s ease;
+    padding: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #e74c3c;
+    color: #ffffff;
+    background-color: #34495e;
 }
 
 /* Main Content Area */
 main {
-    margin-left: 160px;
-    padding: 20px;
+    margin-left: 170px;
+    padding: 40px;
+    background-color: #ffffff;
+    min-height: 100vh;
 }
 
 /* Header Styling */
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
     text-align: center;
-    color: #e74c3c;
-    margin-top: 50px;
+    color: #2c3e50;
+    margin-top: 20px;
 }
 
 /* Content Section Styling */
 .content-section {
     display: none;
     padding: 30px;
-    text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -84,56 +81,56 @@ h1 {
 
 .content-container {
     background: #ffffff;
-    border-radius: 5px;
-    padding: 30px;
+    border-radius: 8px;
+    padding: 40px;
     margin: 40px auto;
-    width: 80%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content-container:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .content-container h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 36px;
     color: #2c3e50;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .content-container p {
     font-size: 16px;
-    color: #34495e;
-    line-height: 1.6;
+    color: #7f8c8d;
 }
 
-/* Button Styling */
+/* Game Menu */
+.game-menu, .events-list, .tournament-list, .forum-list, .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 .arcade-button, .neon-button {
-    background: #e74c3c;
+    background: #2c3e50;
     border: none;
     border-radius: 4px;
     color: #ffffff;
-    font-size: 16px;
-    padding: 12px 30px;
+    font-size: 14px;
+    padding: 10px 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .arcade-button:hover, .neon-button:hover {
-    background: #c0392b;
+    background: #34495e;
+    transform: translateY(-2px);
 }
 
 /* Event, Tournament, Forum, Shop Items */
 .event-item, .tournament-item, .forum-item, .shop-item {
-    background: #ffffff;
-    border: 1px solid #ecf0f1;
-    border-radius: 5px;
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -142,7 +139,7 @@ h1 {
 
 .event-item:hover, .tournament-item:hover, .forum-item:hover, .shop-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .streamer img, .shop-item img {
@@ -152,7 +149,7 @@ h1 {
 
 .streamer img:hover, .shop-item img:hover {
     transform: scale(1.02);
-    filter: brightness(1.1);
+    filter: brightness(1.05);
 }
 
 /* Custom Scrollbars */
@@ -161,7 +158,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e74c3c;
+    background: #2c3e50;
     border-radius: 10px;
 }
 
@@ -171,21 +168,21 @@ h1 {
 
 /* Footer Styling */
 footer {
-    background: #f8f9fa;
+    background: #2c3e50;
     padding: 20px 0;
     text-align: center;
-    color: #7f8c8d;
-    border-top: 1px solid #ecf0f1;
+    color: #bdc3c7;
+    border-top: 1px solid #34495e;
 }
 
 footer a {
-    color: #e74c3c;
+    color: #ffffff;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #c0392b;
+    color: #ecf0f1;
 }
 
 /* Responsive Design */
@@ -208,10 +205,11 @@ footer a:hover {
 
     main {
         margin-left: 0;
+        padding: 20px;
     }
 
     .content-container {
-        width: 90%;
+        width: 100%;
     }
 
     .game-menu, .events-list, .tournament-list, .forum-list, .shop-grid {
