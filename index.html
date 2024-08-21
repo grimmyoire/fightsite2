@@ -6,13 +6,12 @@
     <title>Arizona Fighting Game Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="Arizona Fighting Game Hub - Your ultimate destination for fighting game events, tournaments, and community discussions in Arizona.">
-    <meta name="keywords" content="Arizona, Fighting Games, Tournaments, Events, Community, Tekken, Street Fighter, Mortal Kombat">
 </head>
-<body class="homepage">
-
+<body>
     <nav>
+        <div class="login-button">
+            <a href="#">Login</a>
+        </div>
         <ul>
             <li><a href="#" onclick="showSection('home')">Home</a></li>
             <li><a href="#" onclick="showSection('events')">Events</a></li>
@@ -24,9 +23,11 @@
     </nav>
 
     <main>
-        <h1>Arizona Fighting Game Hub</h1>
+        <div class="banner">
+            <h1>Arizona Fighting Game Hub</h1>
+        </div>
 
-        <!-- Home Section -->
+        <!-- Content Sections -->
         <section id="home" class="content-section visible">
             <div class="content-container">
                 <h1>Welcome to the Arena</h1>
@@ -41,153 +42,20 @@
             </div>
         </section>
 
-        <!-- Events Section -->
-        <section id="events" class="content-section">
-            <div class="content-container">
-                <h1>Upcoming Events</h1>
-                <p>Stay updated with the latest events in the Arizona fighting game community.</p>
-                <div class="events-list">
-                    <div class="event-item">
-                        <h3>Arizona Showdown 2024</h3>
-                        <p>Date: January 20, 2024</p>
-                        <p>Location: Phoenix Convention Center</p>
-                        <button class="neon-button">Register Now</button>
-                    </div>
-                    <div class="event-item">
-                        <h3>Online Tekken 8 Weekly</h3>
-                        <p>Date: Every Friday</p>
-                        <p>Platform: PS5</p>
-                        <button class="neon-button">Join Now</button>
-                    </div>
-                    <div class="event-item">
-                        <h3>Street Fighter 6 Regional</h3>
-                        <p>Date: February 10, 2024</p>
-                        <p>Location: Tucson Gaming Arena</p>
-                        <button class="neon-button">Get Tickets</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tournaments Section -->
-        <section id="tournaments" class="content-section">
-            <div class="content-container">
-                <h1>Competitive Tournaments</h1>
-                <p>Challenge the best players and prove your skills in our tournaments.</p>
-                <div class="tournament-list">
-                    <div class="tournament-item">
-                        <h3>King of Fighters XV Championship</h3>
-                        <p>Date: March 5, 2024</p>
-                        <p>Entry Fee: $20</p>
-                        <button class="neon-button">Sign Up</button>
-                    </div>
-                    <div class="tournament-item">
-                        <h3>Guilty Gear Strive Showdown</h3>
-                        <p>Date: March 18, 2024</p>
-                        <p>Entry Fee: $15</p>
-                        <button class="neon-button">Join Now</button>
-                    </div>
-                    <div class="tournament-item">
-                        <h3>Mortal Kombat 1 Fatal Clash</h3>
-                        <p>Date: April 2, 2024</p>
-                        <p>Entry Fee: $25</p>
-                        <button class="neon-button">Enter Tournament</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Streamer Showcasing Section -->
-        <section id="streamers" class="content-section">
-            <div class="content-container">
-                <h1>Featured Streamers</h1>
-                <p>Watch and learn from the top streamers in the community.</p>
-                <div class="streamer-grid">
-                    <div class="streamer">
-                        <img src="streamer1-thumbnail.jpg" alt="Streamer 1 Thumbnail" loading="lazy">
-                        <h3>Streamer 1</h3>
-                        <p>Tekken 8 Master</p>
-                        <button class="neon-button">Watch Now</button>
-                    </div>
-                    <div class="streamer">
-                        <img src="streamer2-thumbnail.jpg" alt="Streamer 2 Thumbnail" loading="lazy">
-                        <h3>Streamer 2</h3>
-                        <p>Street Fighter 6 Pro</p>
-                        <button class="neon-button">Watch Now</button>
-                    </div>
-                    <div class="streamer">
-                        <img src="streamer3-thumbnail.jpg" alt="Streamer 3 Thumbnail" loading="lazy">
-                        <h3>Streamer 3</h3>
-                        <p>Mortal Kombat 1 Legend</p>
-                        <button class="neon-button">Watch Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Forums Section -->
-        <section id="forums" class="content-section">
-            <div class="content-container">
-                <h1>Community Forums</h1>
-                <p>Join discussions, share tips, and connect with other players.</p>
-                <div class="forum-list">
-                    <div class="forum-item">
-                        <h3>General Discussion</h3>
-                        <p>Topics: Anything fighting game related!</p>
-                        <button class="neon-button">Enter Forum</button>
-                    </div>
-                    <div class="forum-item">
-                        <h3>Tekken 8 Tips & Tricks</h3>
-                        <p>Topics: Best strategies and combos.</p>
-                        <button class="neon-button">Join Discussion</button>
-                    </div>
-                    <div class="forum-item">
-                        <h3>Street Fighter 6 Characters</h3>
-                        <p>Topics: Character guides and tier lists.</p>
-                        <button class="neon-button">View Posts</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Shop Section -->
-        <section id="shop" class="content-section">
-            <div class="content-container">
-                <h1>Shop</h1>
-                <p>Explore the latest fighting game merchandise and gear.</p>
-                <div class="shop-grid">
-                    <div class="shop-item">
-                        <img src="merch1.jpg" alt="Merch 1" loading="lazy">
-                        <h3>Tekken 8 T-Shirt</h3>
-                        <p>Price: $25</p>
-                        <button class="neon-button">Buy Now</button>
-                    </div>
-                    <div class="shop-item">
-                        <img src="merch2.jpg" alt="Merch 2" loading="lazy">
-                        <h3>Street Fighter 6 Hoodie</h3>
-                        <p>Price: $45</p>
-                        <button class="neon-button">Add to Cart</button>
-                    </div>
-                    <div class="shop-item">
-                        <img src="merch3.jpg" alt="Merch 3" loading="lazy">
-                        <h3>Mortal Kombat 1 Poster</h3>
-                        <p>Price: $15</p>
-                        <button class="neon-button">Order Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>Arizona Fighting Game Hub © 2024</p>
-            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
-            <p>Follow us on:
-                <a href="#"><img src="social-icon1.png" alt="Social Icon 1"></a>
-                <a href="#"><img src="social-icon2.png" alt="Social Icon 2"></a>
-                <a href="#"><img src="social-icon3.png" alt="Social Icon 3"></a>
-            </p>
-        </footer>
+        <!-- Other Sections -->
+        <!-- Add sections for events, tournaments, streamers, forums, and shop here -->
+        
     </main>
+
+    <footer>
+        <p>Arizona Fighting Game Hub © 2024</p>
+        <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        <p>Follow us on:
+            <a href="#"><img src="social-icon1.png" alt="Social Icon 1"></a>
+            <a href="#"><img src="social-icon2.png" alt="Social Icon 2"></a>
+            <a href="#"><img src="social-icon3.png" alt="Social Icon 3"></a>
+        </p>
+    </footer>
 
     <script>
         function showSection(sectionId) {
